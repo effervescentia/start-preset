@@ -1,6 +1,6 @@
 {
   "name": "start-standard-preset",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Start preset for Start with Standard Style",
   "keywords": [
     "start",
@@ -23,12 +23,14 @@
     "husky": "^0.12.0",
     "standard": "^8.6.0",
     "start-babel-cli": "^4.0.1",
-    "start-pretty-reporter": "^0.3.0"
+    "start-pretty-reporter": "^0.3.0",
+    "semantic-release": "^6.3.2"
   },
   "scripts": {
     "start": "start-runner --file lib/",
     "prepush": "yarn start lint",
-    "prepublish": "yarn start build"
+    "prepublish": "yarn start build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
     "node": ">=4"
