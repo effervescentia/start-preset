@@ -10,7 +10,7 @@
 🎏 [Standard Style](http://standardjs.com/) preset for [Start](https://github.com/start-runner/start).
 
 The same build tasks as [start-start-preset](https://github.com/start-runner/start-preset) but using
-[start-standard](https://github.com/effervescentia/start-standard) instead of `eslint`.
+[start-standard](https://github.com/effervescentia/start-standard) instead of `start-eslint`.
 However, as `standard` is a derivative of `eslint`, an `.eslintrc` file can be used to further configure the rules applied.
 
 ## Install
