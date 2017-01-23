@@ -11,7 +11,7 @@ dependencies:
     - nvm use 6 && yarn
 test:
   override:
-    - nvm use 6 && yarn start ci
-    - nvm use 7 && yarn start ci
+    - nvm use 6 && yarn start lint
+    - nvm use 7 && yarn start lint
   post:
     - yarn run semantic-release || true
