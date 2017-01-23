@@ -28,7 +28,8 @@
     "start-env": "^3.0.0",
     "start-files": "^2.0.0",
     "start-pretty-reporter": "^0.3.0",
-    "start-read": "^0.3.0"
+    "start-read": "^0.3.0",
+    "tape": "^4.6.3"
   },
   "scripts": {
     "start": "start-runner --file lib/",
