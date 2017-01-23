@@ -13,5 +13,8 @@ test:
   override:
     - nvm use 6 && yarn start lint
     - nvm use 7 && yarn start lint
-  post:
-    - yarn run semantic-release || true
+deployment:
+  production:
+    branch: master
+    commands:
+      - yarn run semantic-release || true
