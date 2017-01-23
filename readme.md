@@ -1,16 +1,17 @@
-# start-start-preset
+# start-standard-preset
 
 [![npm](https://img.shields.io/npm/v/start-start-preset.svg?style=flat-square)](https://www.npmjs.com/package/start-start-preset)
 [![linux build](https://img.shields.io/travis/start-runner/start-preset/master.svg?label=linux&style=flat-square)](https://travis-ci.org/start-runner/start-preset)
 [![windows build](https://img.shields.io/appveyor/ci/start-runner/start-preset/master.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/start-runner/start-preset)
 [![deps](https://img.shields.io/gemnasium/start-runner/start-preset.svg?style=flat-square)](https://gemnasium.com/start-runner/start-preset)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
 🎏 [Standard Style](http://standardjs.com/) preset for [Start](https://github.com/start-runner/start).
 
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-[![Semistandard - JavaScript Style Guide](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
-[![happiness - JavaScript Sytle Guide](https://cdn.rawgit.com/JedWatson/happiness/master/badge.svg)](https://github.com/JedWatson/happiness)
+The same build tasks as [start-start-preset](https://github.com/start-runner/start-preset) but using
+[start-standard](https://github.com/effervescentia/start-standard) instead of `eslint`.
+However, as `standard` is a derivative of `eslint`, an `.eslintrc` file can be used to further configure the rules applied.
 
 ## Install
 
@@ -33,67 +34,8 @@ See [documentation](https://github.com/start-runner/start#readme) and [source ta
 }
 ```
 
-Available commands:
-
-```sh
-npm start build
-npm start dev
-npm start lint
-npm start test
-npm start tdd
-npm start coverage
-npm start ci
-# or
-yarn start build
-yarn start dev
-yarn start lint
-yarn start test
-yarn start tdd
-yarn start coverage
-yarn start ci
-```
+Available commands: same commands as `start-start-preset`.
 
 ### Extend
 
-
-```js
-// tasks.js
-import start from 'start-start-preset';
-
-export * from 'start-start-preset';
-
-export const myTasksRunner = () => start(
-  // ...
-);
-```
-
-Example relies on [babel-plugin-transform-export-extensions](https://babeljs.io/docs/plugins/transform-export-extensions/).
-
-```js
-// package.json
-"scripts": {
-  "start": "start-runner --file tasks.js"
-}
-```
-
-Available commands:
-
-```sh
-npm start build
-npm start dev
-npm start lint
-npm start test
-npm start tdd
-npm start coverage
-npm start ci
-npm start myTasksRunner
-# or
-yarn start build
-yarn start dev
-yarn start lint
-yarn start test
-yarn start tdd
-yarn start coverage
-yarn start ci
-yarn start myTasksRunner
-```
+[Examples](https://github.com/start-runner/start-preset#extend)  of extending a preset.
