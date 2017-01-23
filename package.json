@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "babel-preset-start": "^0.1.0",
+    "condition-circle": "^1.5.0",
     "husky": "^0.12.0",
     "semantic-release": "^6.3.2",
     "standard": "^8.6.0",
@@ -34,6 +35,9 @@
     "prepush": "yarn start lint",
     "prepublish": "yarn start build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
   },
   "engines": {
     "node": ">=4"
