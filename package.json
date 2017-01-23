@@ -25,6 +25,7 @@
   "devDependencies": {
     "babel-preset-start": "^0.1.0",
     "condition-circle": "^1.5.0",
+    "cz-conventional-changelog": "^1.2.0",
     "husky": "^0.12.0",
     "semantic-release": "^6.3.2",
     "standard": "^8.6.0",
@@ -42,5 +43,10 @@
   "engines": {
     "node": ">=4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
