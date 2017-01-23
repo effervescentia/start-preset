@@ -21,10 +21,14 @@
   "devDependencies": {
     "babel-preset-start": "^0.1.0",
     "husky": "^0.12.0",
+    "semantic-release": "^6.3.2",
     "standard": "^8.6.0",
     "start-babel-cli": "^4.0.1",
+    "start-codecov": "^2.0.0",
+    "start-env": "^3.0.0",
+    "start-files": "^2.0.0",
     "start-pretty-reporter": "^0.3.0",
-    "semantic-release": "^6.3.2"
+    "start-read": "^0.3.0"
   },
   "scripts": {
     "start": "start-runner --file lib/",
