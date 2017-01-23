@@ -1,39 +1,29 @@
 {
-  "name": "start-start-preset",
-  "version": "3.0.1",
-  "description": "Start preset for Start",
+  "name": "start-standard-preset",
+  "version": "1.0.0",
+  "description": "Start preset for Start with Standard Style",
   "keywords": [
     "start",
     "start-preset"
   ],
-  "homepage": "https://github.com/start-runner/start-preset",
-  "repository": "start-runner/start-preset",
-  "author": "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
+  "homepage": "https://github.com/effervescentia/start-standard-preset",
+  "repository": "effervescentia/start-standard-preset",
+  "author": "Ben Teichman <ben.l.teichman@gmail.com> (https://github.com/effervescentia)",
   "files": [
     "build/"
   ],
   "main": "build/index.js",
   "dependencies": {
     "start": "^5.0.0",
-    "start-babel": "^3.0.0",
-    "start-clean": "^2.0.0",
-    "start-codecov": "^2.0.0",
-    "start-env": "^3.0.0",
-    "start-eslint": "^3.0.1",
-    "start-files": "^2.0.0",
-    "start-istanbul": "^3.0.0",
-    "start-pretty-reporter": "^0.3.0",
-    "start-read": "^0.3.0",
-    "start-tape": "^0.2.0",
-    "start-watch": "^2.0.0",
-    "start-write": "^2.0.0",
-    "tap-spec": "^4.1.1"
+    "start-standard": "^1.0.0",
+    "start-start-preset": "^3.0.1"
   },
   "devDependencies": {
     "babel-preset-start": "^0.1.0",
-    "eslint-config-tough": "^0.3.1",
     "husky": "^0.12.0",
-    "start-babel-cli": "^4.0.1"
+    "standard": "^8.6.0",
+    "start-babel-cli": "^4.0.1",
+    "start-pretty-reporter": "^0.3.0"
   },
   "scripts": {
     "start": "start-runner --file lib/",

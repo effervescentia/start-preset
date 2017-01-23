@@ -5,16 +5,18 @@
 [![windows build](https://img.shields.io/appveyor/ci/start-runner/start-preset/master.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/start-runner/start-preset)
 [![deps](https://img.shields.io/gemnasium/start-runner/start-preset.svg?style=flat-square)](https://gemnasium.com/start-runner/start-preset)
 
-Start preset for [Start](https://github.com/start-runner/start).
+🎏 [Standard Style](http://standardjs.com/) preset for [Start](https://github.com/start-runner/start).
 
-![recursion](pic.gif)
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![Semistandard - JavaScript Style Guide](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
+[![happiness - JavaScript Sytle Guide](https://cdn.rawgit.com/JedWatson/happiness/master/badge.svg)](https://github.com/JedWatson/happiness)
 
 ## Install
 
 ```sh
-npm install --save-dev start-start-preset
+npm install --save-dev start-standard-preset
 # or
-yarn add --dev start-start-preset
+yarn add --dev start-standard-preset
 ```
 
 ## Usage
@@ -26,7 +28,7 @@ See [documentation](https://github.com/start-runner/start#readme) and [source ta
 ```js
 // package.json
 "scripts": {
-  "start": "start-runner --preset start-start-preset"
+  "start": "start-runner --preset start-standard-preset"
 }
 ```
 
