@@ -20,7 +20,8 @@
     "start-files": "^2.0.0",
     "start-read": "^0.3.0",
     "start-standard": "^1.0.0",
-    "start-start-preset": "^3.0.1"
+    "start-start-preset": "^3.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-preset-start": "^0.1.0",
@@ -34,8 +35,9 @@
   "scripts": {
     "start": "start-runner --file lib/",
     "prepush": "yarn start lint",
-    "prepublish": "yarn start build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "prepublish": "yarn run snyk-protect && yarn start build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "snyk-protect": "snyk protect"
   },
   "release": {
     "verifyConditions": "condition-circle"
@@ -48,5 +50,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "snyk": true
 }
